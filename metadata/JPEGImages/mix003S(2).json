@@ -1,0 +1,88 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "qiwi",
+      "description": "",
+      "points": [
+        [
+          96.0,
+          293.0
+        ],
+        [
+          272.0,
+          293.0
+        ],
+        [
+          272.0,
+          437.0
+        ],
+        [
+          96.0,
+          437.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "apple",
+      "description": "",
+      "points": [
+        [
+          320.0,
+          257.0
+        ],
+        [
+          518.0,
+          257.0
+        ],
+        [
+          518.0,
+          436.0
+        ],
+        [
+          320.0,
+          436.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          662.0,
+          382.0
+        ],
+        [
+          730.0,
+          382.0
+        ],
+        [
+          730.0,
+          445.0
+        ],
+        [
+          662.0,
+          445.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "mix003S(2).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "lemon",
+      "description": "",
+      "points": [
+        [
+          433.0,
+          192.0
+        ],
+        [
+          572.0,
+          192.0
+        ],
+        [
+          572.0,
+          335.0
+        ],
+        [
+          433.0,
+          335.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          116.0,
+          288.0
+        ],
+        [
+          178.0,
+          288.0
+        ],
+        [
+          178.0,
+          345.0
+        ],
+        [
+          116.0,
+          345.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "lemon003S(3).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

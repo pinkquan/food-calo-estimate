@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "pear",
+      "description": "",
+      "points": [
+        [
+          422.0,
+          188.0
+        ],
+        [
+          663.0,
+          188.0
+        ],
+        [
+          663.0,
+          437.0
+        ],
+        [
+          422.0,
+          437.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          92.0,
+          203.0
+        ],
+        [
+          163.0,
+          203.0
+        ],
+        [
+          163.0,
+          271.0
+        ],
+        [
+          92.0,
+          271.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "pear001T(15).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

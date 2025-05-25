@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "bun",
+      "description": "",
+      "points": [
+        [
+          454.0,
+          270.0
+        ],
+        [
+          752.0,
+          270.0
+        ],
+        [
+          752.0,
+          427.0
+        ],
+        [
+          454.0,
+          427.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          80.0,
+          383.0
+        ],
+        [
+          161.0,
+          383.0
+        ],
+        [
+          161.0,
+          460.0
+        ],
+        [
+          80.0,
+          460.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "bun006S(2).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

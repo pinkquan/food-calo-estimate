@@ -1,0 +1,208 @@
+.profile-section {
+    margin-bottom: 3rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.history-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.records-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.record-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.record-card:hover {
+    transform: translateY(-4px);
+}
+
+.record-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.record-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.record-details {
+    padding: 1rem;
+}
+
+.record-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.total-calories {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.food-items {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.food-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.food-weight {
+    margin: 0 1rem;
+    color: #666;
+}
+
+.food-calories {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.no-records {
+    text-align: center;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.no-records p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background: #45a049;
+}
+
+/* Profile edit form */
+.profile-edit {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.edit-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Alert messages */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .records-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-card {
+        padding: 1rem;
+    }
+}

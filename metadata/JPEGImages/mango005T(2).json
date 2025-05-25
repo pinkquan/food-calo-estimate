@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "mango",
+      "description": "",
+      "points": [
+        [
+          461.0,
+          302.0
+        ],
+        [
+          573.0,
+          302.0
+        ],
+        [
+          573.0,
+          485.0
+        ],
+        [
+          461.0,
+          485.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          114.0,
+          316.0
+        ],
+        [
+          178.0,
+          316.0
+        ],
+        [
+          178.0,
+          377.0
+        ],
+        [
+          114.0,
+          377.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "mango005T(2).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

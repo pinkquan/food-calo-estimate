@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "bread",
+      "description": "",
+      "points": [
+        [
+          126.0,
+          173.0
+        ],
+        [
+          541.0,
+          173.0
+        ],
+        [
+          541.0,
+          564.0
+        ],
+        [
+          126.0,
+          564.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          641.0,
+          271.0
+        ],
+        [
+          708.0,
+          271.0
+        ],
+        [
+          708.0,
+          342.0
+        ],
+        [
+          641.0,
+          342.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "bread003T(1).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

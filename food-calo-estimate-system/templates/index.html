@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống ước lượng calo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>FoodCalo</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" class="active">Trang chủ</a></li>
+                    {% if current_user.is_authenticated %}
+                        <li><a href="{{ url_for('view_history') }}">Xem thông tin</a></li>
+                        <li><a href="{{ url_for('auth.logout') }}">Đăng xuất</a></li>
+                        <li class="user-welcome">Xin chào, {{ current_user.username }}!</li>
+                    {% else %}
+                        <li><a href="{{ url_for('auth.login') }}">Đăng nhập</a></li>
+                        <li><a href="{{ url_for('auth.register') }}">Đăng ký</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>Hệ thống ước lượng calo</h1>
+            <p class="subtitle">(Vui lòng tải lên hình ảnh có kèm đồng xu)</p>
+        </div>
+
+        {% if current_user.is_authenticated %}
+            <div class="upload-container" id="upload-container">
+                <div class="upload-area" id="drop-area">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <div class="upload-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <p class="upload-text">Kéo thả hoặc bấm vào đây để tải ảnh lên</p>
+                </div>
+                
+                <div class="preview-container" id="preview-container" style="display: none;">
+                    <img id="preview-image" src="" alt="Preview">
+                    <div class="button-group">
+                        <button id="analyze-btn" class="btn btn-primary">Phân tích</button>
+                        <button id="delete-btn" class="btn btn-danger">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="login-prompt">
+                <p>Vui lòng <a href="{{ url_for('auth.login') }}">đăng nhập</a> để sử dụng tính năng phân tích ảnh.</p>
+            </div>
+        {% endif %}
+        
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing image...</p>
+        </div>
+        
+        <div id="results-container" style="display: none;">
+            <h2>Analysis Results</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Confidence</th>
+                        <th>Volume (cm³)</th>
+                        <th>Weight (g)</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <!-- Results will be populated here -->
+                </tbody>
+                <tfoot id="results-footer">
+                    <tr>
+                        <td colspan="4" class="total-label">Total Calories:</td>
+                        <td id="total-calories" class="total-value">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <div id="error-message" class="error-message" style="display: none;"></div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 NHQ-HaUI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

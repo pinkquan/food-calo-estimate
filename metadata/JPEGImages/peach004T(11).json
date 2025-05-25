@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "peach",
+      "description": "",
+      "points": [
+        [
+          484.0,
+          281.0
+        ],
+        [
+          656.0,
+          281.0
+        ],
+        [
+          656.0,
+          439.0
+        ],
+        [
+          484.0,
+          439.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          147.0,
+          124.0
+        ],
+        [
+          212.0,
+          124.0
+        ],
+        [
+          212.0,
+          184.0
+        ],
+        [
+          147.0,
+          184.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "peach004T(11).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

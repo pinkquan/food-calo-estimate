@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "grape",
+      "description": "",
+      "points": [
+        [
+          359.0,
+          191.0
+        ],
+        [
+          684.0,
+          191.0
+        ],
+        [
+          684.0,
+          501.0
+        ],
+        [
+          359.0,
+          501.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          157.0,
+          175.0
+        ],
+        [
+          222.0,
+          175.0
+        ],
+        [
+          222.0,
+          238.0
+        ],
+        [
+          157.0,
+          238.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "grape002T(16).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "orange",
+      "description": "",
+      "points": [
+        [
+          160.0,
+          257.0
+        ],
+        [
+          357.0,
+          257.0
+        ],
+        [
+          357.0,
+          429.0
+        ],
+        [
+          160.0,
+          429.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          441.0,
+          76.0
+        ],
+        [
+          495.0,
+          76.0
+        ],
+        [
+          495.0,
+          136.0
+        ],
+        [
+          441.0,
+          136.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "orange006T(1).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

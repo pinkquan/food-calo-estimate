@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "egg",
+      "description": "",
+      "points": [
+        [
+          492.0,
+          205.0
+        ],
+        [
+          626.0,
+          205.0
+        ],
+        [
+          626.0,
+          382.0
+        ],
+        [
+          492.0,
+          382.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          72.0,
+          185.0
+        ],
+        [
+          143.0,
+          185.0
+        ],
+        [
+          143.0,
+          253.0
+        ],
+        [
+          72.0,
+          253.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "egg007T(7).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

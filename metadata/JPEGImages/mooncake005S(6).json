@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "mooncake",
+      "description": "",
+      "points": [
+        [
+          477.0,
+          339.0
+        ],
+        [
+          609.0,
+          339.0
+        ],
+        [
+          609.0,
+          410.0
+        ],
+        [
+          477.0,
+          410.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          108.0,
+          360.0
+        ],
+        [
+          176.0,
+          360.0
+        ],
+        [
+          176.0,
+          425.0
+        ],
+        [
+          108.0,
+          425.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "mooncake005S(6).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

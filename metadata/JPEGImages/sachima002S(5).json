@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "sachima",
+      "description": "",
+      "points": [
+        [
+          442.0,
+          284.0
+        ],
+        [
+          684.0,
+          284.0
+        ],
+        [
+          684.0,
+          403.0
+        ],
+        [
+          442.0,
+          403.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          95.0,
+          338.0
+        ],
+        [
+          172.0,
+          338.0
+        ],
+        [
+          172.0,
+          414.0
+        ],
+        [
+          95.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "sachima002S(5).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

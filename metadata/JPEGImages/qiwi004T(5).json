@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "qiwi",
+      "description": "",
+      "points": [
+        [
+          184.0,
+          265.0
+        ],
+        [
+          429.0,
+          265.0
+        ],
+        [
+          429.0,
+          436.0
+        ],
+        [
+          184.0,
+          436.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          572.0,
+          118.0
+        ],
+        [
+          633.0,
+          118.0
+        ],
+        [
+          633.0,
+          185.0
+        ],
+        [
+          572.0,
+          185.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "qiwi004T(5).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

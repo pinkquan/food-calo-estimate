@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "doughnut",
+      "description": "",
+      "points": [
+        [
+          343.0,
+          182.0
+        ],
+        [
+          626.0,
+          182.0
+        ],
+        [
+          626.0,
+          451.0
+        ],
+        [
+          343.0,
+          451.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          151.0,
+          77.0
+        ],
+        [
+          216.0,
+          77.0
+        ],
+        [
+          216.0,
+          143.0
+        ],
+        [
+          151.0,
+          143.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "doughnut004T(6).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

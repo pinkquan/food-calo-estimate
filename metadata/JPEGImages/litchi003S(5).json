@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "litchi",
+      "description": "",
+      "points": [
+        [
+          480.0,
+          334.0
+        ],
+        [
+          610.0,
+          334.0
+        ],
+        [
+          610.0,
+          449.0
+        ],
+        [
+          480.0,
+          449.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          257.0,
+          378.0
+        ],
+        [
+          319.0,
+          378.0
+        ],
+        [
+          319.0,
+          441.0
+        ],
+        [
+          257.0,
+          441.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "litchi003S(5).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

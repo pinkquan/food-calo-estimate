@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "fired_dough_twist",
+      "description": "",
+      "points": [
+        [
+          331.0,
+          141.0
+        ],
+        [
+          487.0,
+          141.0
+        ],
+        [
+          487.0,
+          227.0
+        ],
+        [
+          331.0,
+          227.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          13.0,
+          172.0
+        ],
+        [
+          74.0,
+          172.0
+        ],
+        [
+          74.0,
+          226.0
+        ],
+        [
+          13.0,
+          226.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "fired_dough_twist007S(7).JPG",
+  "imageData": null,
+  "imageHeight": 378,
+  "imageWidth": 504
+}

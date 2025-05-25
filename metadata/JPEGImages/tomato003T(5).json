@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tomato",
+      "description": "",
+      "points": [
+        [
+          507.0,
+          231.0
+        ],
+        [
+          719.0,
+          231.0
+        ],
+        [
+          719.0,
+          441.0
+        ],
+        [
+          507.0,
+          441.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          145.0,
+          193.0
+        ],
+        [
+          206.0,
+          193.0
+        ],
+        [
+          206.0,
+          252.0
+        ],
+        [
+          145.0,
+          252.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "tomato003T(5).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

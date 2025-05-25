@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "plum",
+      "description": "",
+      "points": [
+        [
+          397.0,
+          261.0
+        ],
+        [
+          562.0,
+          261.0
+        ],
+        [
+          562.0,
+          421.0
+        ],
+        [
+          397.0,
+          421.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          198.0,
+          148.0
+        ],
+        [
+          269.0,
+          148.0
+        ],
+        [
+          269.0,
+          211.0
+        ],
+        [
+          198.0,
+          211.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "plum004T(22).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

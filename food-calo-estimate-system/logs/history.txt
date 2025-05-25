@@ -1,0 +1,46 @@
+[2025-05-21 18:02:58] Tổng calories: 70.04 kcal
+  - apple: 134.7g
+
+[2025-05-21 18:03:26] Tổng calories: 71.44 kcal
+  - lemon: 92.73g
+  - tomato: 247.5g
+
+[2025-05-21 18:08:56] Tổng calories: 134.5 kcal
+  - apple: 258.66g
+
+[2025-05-21 20:04:09] Tổng calories: 74.35 kcal
+  - lemon: 93.2g
+  - tomato: 262.88g
+
+[2025-05-25 08:35:44] Tổng calories: 108.27 kcal
+  - orange: 187.0g
+  - tomato: 113.21g
+
+[2025-05-25 08:38:48] Tổng calories: 145.28 kcal
+  - apple: 279.38g
+
+[2025-05-25 08:44:15] Tổng calories: 157.23 kcal
+  - apple: 302.36g
+
+[2025-05-25 08:54:07] Tổng calories: 178.83 kcal
+  - apple: 343.91g
+
+[2025-05-25 08:56:49] Tổng calories: 116.96 kcal
+  - orange: 248.85g
+
+[2025-05-25 08:57:08] Tổng calories: 175.07 kcal
+  - sachima: 53.87g
+
+[2025-05-25 08:57:18] Tổng calories: 107.45 kcal
+  - banana: 63.24g
+  - banana: 57.49g
+
+[2025-05-25 08:57:41] Tổng calories: 239.97 kcal
+  - mango: 95.51g
+  - pear: 123.72g
+  - mango: 186.9g
+
+[2025-05-25 08:57:56] Tổng calories: 268.75 kcal
+  - mango: 222.31g
+  - banana: 152.1g
+

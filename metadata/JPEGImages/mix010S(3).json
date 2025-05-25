@@ -1,0 +1,88 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tomato",
+      "description": "",
+      "points": [
+        [
+          337.0,
+          258.0
+        ],
+        [
+          525.0,
+          258.0
+        ],
+        [
+          525.0,
+          394.0
+        ],
+        [
+          337.0,
+          394.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "lemon",
+      "description": "",
+      "points": [
+        [
+          607.0,
+          261.0
+        ],
+        [
+          757.0,
+          261.0
+        ],
+        [
+          757.0,
+          395.0
+        ],
+        [
+          607.0,
+          395.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          119.0,
+          347.0
+        ],
+        [
+          179.0,
+          347.0
+        ],
+        [
+          179.0,
+          403.0
+        ],
+        [
+          119.0,
+          403.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "mix010S(3).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}

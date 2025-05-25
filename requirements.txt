@@ -1,0 +1,13 @@
+ultralytics
+albumentations
+tqdm
+flask
+onnxruntime
+scikit-learn
+pandas
+opencv-python
+werkzeug
+pymongo
+python-dotenv
+flask-login
+bcrypt

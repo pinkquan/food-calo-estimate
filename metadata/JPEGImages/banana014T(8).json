@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana",
+      "description": "",
+      "points": [
+        [
+          336.0,
+          99.0
+        ],
+        [
+          560.0,
+          99.0
+        ],
+        [
+          560.0,
+          459.0
+        ],
+        [
+          336.0,
+          459.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "coin",
+      "description": "",
+      "points": [
+        [
+          123.0,
+          230.0
+        ],
+        [
+          184.0,
+          230.0
+        ],
+        [
+          184.0,
+          291.0
+        ],
+        [
+          123.0,
+          291.0
+        ]
+      ],
+      "group_id": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "banana014T(8).JPG",
+  "imageData": null,
+  "imageHeight": 612,
+  "imageWidth": 816
+}
