@@ -134,7 +134,7 @@ def calculate_volume(food_detection, pixel_to_mm_ratio):
         radius_mm = min(width_mm, height_mm) / 2
         volume = math.pi * (radius_mm ** 2) * depth_mm
     elif food_type in ['pear']:
-        # Hình giọt nước (xấp xỉ bằng hình nón + nửa hình cầu)
+        # Hình giọt nước (~ bằng hình nón + nửa hình cầu)
         radius_mm = min(width_mm, height_mm) / 2
         cone_height_mm = max(width_mm, height_mm) - 2 * radius_mm
         volume_cone = (1/3) * math.pi * (radius_mm ** 2) * cone_height_mm

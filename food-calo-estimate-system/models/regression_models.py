@@ -62,22 +62,6 @@ food_calorie_database = {
 
 
 def weight_estimator(food_type, volume):
-    """
-    Ước tính khối lượng (g) của thực phẩm dựa trên thể tích (cm³)
-    sử dụng mô hình hồi quy tuyến tính.
-    
-    Parameters:
-    -----------
-    food_type : str
-        Loại thực phẩm
-    volume : float
-        Thể tích của thực phẩm (cm³)
-        
-    Returns:
-    --------
-    float
-        Khối lượng ước tính (g)
-    """
     if food_type in regression_models:
         coefficient, intercept = regression_models[food_type]
         
