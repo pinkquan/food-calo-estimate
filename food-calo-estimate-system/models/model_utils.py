@@ -14,13 +14,6 @@ def load_model(model_path):
 
 
 def detect_objects(model, image, conf_threshold=0.66):
-    """
-    Thực hiện phát hiện đối tượng trên ảnh với YOLOv8 PyTorch
-    Args:
-        model: Model YOLO đã load
-        image: Ảnh đầu vào
-        conf_threshold: Ngưỡng confidence (default: 0.7)
-    """
     # Dự đoán với confidence threshold
     results = model(image, conf=conf_threshold)  # Set confidence threshold here
     detections = []
@@ -46,10 +39,6 @@ def detect_objects(model, image, conf_threshold=0.66):
     return detections
 
 def coin_reference_scale(coin_detection):
-    """
-    Tính toán tỷ lệ pixel-to-mm từ đồng xu tham chiếu
-    Đồng xu có đường kính 25mm
-    """
     x1, y1, x2, y2 = coin_detection['bbox']
     
     # Tính đường kính đồng xu trên ảnh (pixels)
