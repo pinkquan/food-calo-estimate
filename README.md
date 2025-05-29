@@ -4,11 +4,7 @@ A lightweight and efficient system for estimating the **calories of food items f
 
 ## 📌 Overview
 
-This project aims to automate the process of calorie estimation in meals by detecting and identifying food items through images and predicting their respective calorie values using pre-trained machine learning models.
-
-<p align="center">
-  <img src="docs/demo_result.png" width="600" alt="Sample Output">
-</p>
+This project aims to automate the process of calorie estimation in meals by detecting and identifying food items through images and predicting their respective calorie values using pre-trained deep learning models.
 
 ---
 
@@ -61,4 +57,5 @@ pip install -r requirements.txt
 
 ## 🙋‍♂️ Author
 `Pink Quan`
+``
 <a href="https://github.com/pinkquan">GitHub Profile</a>

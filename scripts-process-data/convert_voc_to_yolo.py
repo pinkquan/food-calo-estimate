@@ -1,15 +1,13 @@
-# Convert .xml to .txt
 import os
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
 
-# List class, contain "coin" class
+
 CLASS = ["coin", "apple", "banana", "bread", "bun", "doughnut", "egg", 
          "fired_dough_twist", "grape", "lemon", "litchi", "mango", 
          "mooncake", "orange", "pear", "peach", "plum", "qiwi", 
          "sachima", "tomato"]
 
-# create mapping from class name to class_id
 class_name_to_id = {name: idx for idx, name in enumerate(CLASS)}
 
 XML_ROOT = "../dataset/labels"
@@ -65,4 +63,4 @@ if __name__ == "__main__":
 
             os.remove(xml_path)  
 
-    print("✅ Done converting XML to YOLO format.")
+    print("Done converting XML to YOLO format.")

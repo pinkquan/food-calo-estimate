@@ -8,18 +8,14 @@ def calculate_average_error(test_folder, excel_path):
     total_error_percentage = 0
     total_images = 0
 
-    # Duyệt qua tất cả các file trong thư mục test
     for image_name in os.listdir(test_folder):
         if image_name.lower().endswith(('.jpg', '.jpeg', '.png')):  # Chỉ xử lý file ảnh
             try:
-                # Bỏ qua các ảnh có loại thực phẩm không hợp lệ (vd: mix)
                 if "mix" in image_name:
                     continue
 
-                # Tính toán kết quả cho từng ảnh
                 result = estimate_calories(image_name, excel_path)
 
-                # Tính phần trăm sai số cho từng ảnh
                 actual_weight = result["actual_weight"]
                 weight_error = result["weight_error"]
                 error_percentage = (weight_error / actual_weight) * 100
@@ -29,7 +25,6 @@ def calculate_average_error(test_folder, excel_path):
             except Exception as e:
                 print(f"Lỗi khi xử lý {image_name}: {e}")
 
-    # Tính % sai số trung bình
     if total_images == 0:
         raise ValueError("Không có ảnh hợp lệ trong thư mục test.")
     

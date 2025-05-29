@@ -10,11 +10,9 @@ from flask_login import LoginManager, current_user, login_required
 from auth import auth
 from bson import ObjectId
 
-# Initialize Flask app
 app = Flask(__name__)
 app.secret_key = 'your-secret-key'
 
-# Khởi tạo Login Manager
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
 login_manager.init_app(app)
@@ -23,13 +21,10 @@ login_manager.init_app(app)
 def load_user(user_id):
     return User.get_by_id(ObjectId(user_id))
 
-# Đăng ký blueprint
 app.register_blueprint(auth)
 
-# Các định dạng ảnh cho phép
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
-# Load model
 model_path = 'models/last.pt'
 try:
     detection_model = load_model(model_path)
@@ -55,17 +50,14 @@ def analyze_food():
             return jsonify({'error': 'No selected file'}), 400
         
         if file and allowed_file(file.filename):
-            # Đọc ảnh trực tiếp từ file
             file_content = file.read()
             image = cv2.imdecode(np.frombuffer(file_content, np.uint8), cv2.IMREAD_COLOR)
             
             if image is None:
                 return jsonify({'error': 'Cannot read image'}), 400
                 
-            # Detect đối tượng trong ảnh
             detections = detect_objects(detection_model, image)
             
-            # Tìm đồng xu tham chiếu
             coin_detection = None
             food_detections = []
             
@@ -81,7 +73,6 @@ def analyze_food():
                     'detections': detections
                 }), 400
             
-            # Tính toán kết quả
             pixel_to_mm_ratio = coin_reference_scale(coin_detection)
             results = []
             
@@ -99,7 +90,6 @@ def analyze_food():
                     'calories': round(calorie, 2)
                 })
 
-            # Tính tổng calories và lưu vào database
             total_calories = sum(item['calories'] for item in results)
             
             food_record = FoodRecord(

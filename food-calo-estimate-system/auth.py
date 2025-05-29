@@ -17,18 +17,15 @@ def register():
         email = request.form.get('email')
         password = request.form.get('password')
 
-        # Kiểm tra user đã tồn tại
         if users.find_one({"email": email}):
             flash('Email đã được đăng ký')
             return redirect(url_for('auth.register'))
 
-        # Tạo user mới
         password_hash = generate_password_hash(password)
         new_user = User(username=username, email=email, password_hash=password_hash)
         user_dict = new_user.to_dict()
         result = users.insert_one(user_dict)
         
-        # Gán ID cho user và login
         new_user._id = result.inserted_id
         login_user(new_user)
         

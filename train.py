@@ -1,12 +1,10 @@
 from ultralytics import YOLO
 import multiprocessing
 
-# Load model
 model = YOLO('yolov8n.pt')
 
 
 if __name__ == "__main__":
-    # Train
     model.train(
         data='dataset/data.yaml',
         epochs=50,

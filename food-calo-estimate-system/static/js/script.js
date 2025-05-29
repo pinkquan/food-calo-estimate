@@ -144,25 +144,19 @@ const resultsBody = document.getElementById('results-body');
 const totalCalories = document.getElementById('total-calories');
 const errorMessage = document.getElementById('error-message');
 
-// File data
 let currentFile = null;
 
-// Initialize the drag and drop functionality
 function initDragAndDrop() {
-    // Click to select file
     dropArea.addEventListener('click', () => {
         fileInput.click();
     });
 
-    // Handle file selection
     fileInput.addEventListener('change', handleFileSelect);
 
-    // Prevent default drag behaviors
     ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
         dropArea.addEventListener(eventName, preventDefaults, false);
     });
 
-    // Highlight drop area when item is dragged over it
     ['dragenter', 'dragover'].forEach(eventName => {
         dropArea.addEventListener(eventName, highlight, false);
     });
@@ -171,11 +165,8 @@ function initDragAndDrop() {
         dropArea.addEventListener(eventName, unhighlight, false);
     });
 
-    // Handle dropped files
     dropArea.addEventListener('drop', handleDrop, false);
 }
-
-// Utility functions
 function preventDefaults(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -215,29 +206,23 @@ function handleFiles(files) {
 }
 
 function displayPreview(file) {
-    // Show preview container
     previewContainer.style.display = 'block';
     dropArea.style.display = 'none';
     
-    // Create URL for the file and set it as image source
     const fileURL = URL.createObjectURL(file);
     previewImage.src = fileURL;
     
-    // Hide any previous results or errors
     resultsContainer.style.display = 'none';
     errorMessage.style.display = 'none';
 }
 
 function resetUpload() {
-    // Reset file input
     fileInput.value = '';
     currentFile = null;
     
-    // Show dropArea, hide preview
     dropArea.style.display = 'block';
     previewContainer.style.display = 'none';
     
-    // Hide results and errors
     resultsContainer.style.display = 'none';
     errorMessage.style.display = 'none';
 }
@@ -254,16 +239,13 @@ function analyzeImage() {
         return;
     }
     
-    // Show loading animation
     loadingElement.style.display = 'flex';
     resultsContainer.style.display = 'none';
     errorMessage.style.display = 'none';
     
-    // Create form data for the request
     const formData = new FormData();
     formData.append('file', currentFile);
     
-    // Send the image to the server for analysis
     fetch('/analyze', {
         method: 'POST',
         body: formData
@@ -273,7 +255,6 @@ function analyzeImage() {
             throw new Error(`Server responded with status: ${response.status}`);
         }
         
-        // Check content type to ensure we're getting JSON
         const contentType = response.headers.get('content-type');
         if (!contentType || !contentType.includes('application/json')) {
             throw new Error(`Expected JSON response but got ${contentType}`);
@@ -282,7 +263,6 @@ function analyzeImage() {
         return response.json();
     })
     .then(data => {
-        // Hide loading animation
         loadingElement.style.display = 'none';
         
         if (data.error) {
@@ -290,7 +270,6 @@ function analyzeImage() {
             return;
         }
         
-        // Display results
         displayResults(data);
     })
     .catch(error => {
@@ -301,23 +280,17 @@ function analyzeImage() {
 }
 
 function displayResults(data) {
-    // Clear any previous results
     resultsBody.innerHTML = '';
     
-    // Check if we have results
     if (!data.results || data.results.length === 0) {
         showError("No food items detected in the image.");
         return;
     }
     
-    // Calculate total calories
     let caloriesSum = 0;
     
-    // Add each food item to the table
     data.results.forEach(item => {
         const row = document.createElement('tr');
-        
-        // Format confidence as percentage
         const confidencePercent = (item.confidence * 100).toFixed(0) + '%';
         
         row.innerHTML = `
@@ -332,10 +305,8 @@ function displayResults(data) {
         caloriesSum += item.calories;
     });
     
-    // Update total calories
     totalCalories.textContent = caloriesSum.toFixed(2) + ' kcal';
     
-    // Show results container
     resultsContainer.style.display = 'block';
 }
 
@@ -343,11 +314,8 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     initDragAndDrop();
-    
-    // Add event listeners for the buttons
     analyzeBtn.addEventListener('click', analyzeImage);
     deleteBtn.addEventListener('click', resetUpload);
 });

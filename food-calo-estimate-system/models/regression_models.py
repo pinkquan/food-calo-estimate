@@ -1,10 +1,3 @@
-"""
-Module chứa các mô hình hồi quy để ước tính khối lượng từ thể tích 
-và cơ sở dữ liệu calorie của các loại thực phẩm.
-
-Các mô hình được xây dựng từ dữ liệu trong file excel về mối quan hệ giữa thể tích và khối lượng.
-"""
-
 # Hệ số hồi quy volume → weight theo từng loại thực phẩm
 # Mô hình: weight = coefficient * volume + intercept
 regression_models = {
@@ -56,18 +49,14 @@ food_calorie_database = {
     # Khác
     'egg': 155,       # trứng
     
-    # Giá trị mặc định cho các loại thực phẩm chưa được định nghĩa
-    'default': 100    # 100 kcal per 100g
+    'default': 100    
 }
 
 
 def weight_estimator(food_type, volume):
     if food_type in regression_models:
         coefficient, intercept = regression_models[food_type]
-        
-        # Áp dụng mô hình hồi quy: weight = coefficient * volume + intercept
         weight = coefficient * volume + intercept
-        return max(0, weight)  # Đảm bảo khối lượng không âm
+        return max(0, weight)  
     else:
-        # Nếu không có mô hình cho loại thực phẩm, giả định tỷ trọng là 0.8 g/cm³
         return volume * 0.8

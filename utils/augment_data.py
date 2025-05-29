@@ -6,7 +6,7 @@ from tqdm import tqdm
 from collections import defaultdict
 import get_augment_class
 
-# Cấu hình
+
 IMAGES_DIR = '../dataset/images/train'
 LABELS_DIR = '../dataset/labels/train'
 AUG_IMAGES_DIR = '../dataset/images/train_aug'
@@ -17,7 +17,7 @@ CLASSES_TO_AUG = get_augment_class.get_augment_classes()
 os.makedirs(AUG_IMAGES_DIR, exist_ok=True)
 os.makedirs(AUG_LABELS_DIR, exist_ok=True)
 
-# Pipeline augment
+
 transform = A.Compose([
     A.HorizontalFlip(p=0.5),
     A.RandomBrightnessContrast(p=0.5),
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         label_path = os.path.join(LABELS_DIR, file)
         image_path = os.path.join(IMAGES_DIR, file.replace(".txt", ".jpg"))
         if not os.path.exists(image_path):
-            image_path = image_path.replace(".jpg", ".JPG")  # fallback
+            image_path = image_path.replace(".jpg", ".JPG")  
 
         lines = load_labels(label_path)
 
