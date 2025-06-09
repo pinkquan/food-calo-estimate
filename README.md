@@ -32,7 +32,7 @@ This project aims to automate the process of calorie estimation in meals by dete
 
 ```bash
 git clone https://github.com/pinkquan/food-calo-estimate.git
-cd food-calo-estimate
+cd food-calo-estimate-system
 ```
 
 ### 2. Create virtual environment (recommended)
@@ -56,6 +56,5 @@ pip install -r requirements.txt
 `Contributions are welcome! Please open an issue or pull request.`
 
 ## 🙋‍♂️ Author
-`Pink Quan`
-``
+`Pink Quan `
 <a href="https://github.com/pinkquan">GitHub Profile</a>
